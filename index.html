@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=auto, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>HRM System</title>
+    <!-- Calling External Css -->
+    <link rel="stylesheet" href="./styling/index.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">HRM LOGO</div>
+      <nav class="nav-menu">
+        <button><i class="fas fa-tachometer-alt"></i> Dashboard</button>
+        <button><i class="fas fa-calendar-check"></i> Attendance</button>
+        <button><i class="fas fa-tasks"></i> Requests</button>
+        <button><i class="fas fa-users"></i> Employees</button>
+        <button><i class="fas fa-bullhorn"></i> Notices</button>
+        <button>
+          <i class="fas fa-exclamation-circle"></i> Warning Letters
+        </button>
+        <button><i class="fas fa-money-check-alt"></i> Payrolls</button>
+        <button><i class="fas fa-rss"></i> Feeds</button>
+        <button><i class="fas fa-sitemap"></i> Organisation Structure</button>
+        <button><i class="fas fa-user-shield"></i> Users & Roles</button>
+        <button><i class="fas fa-chart-bar"></i> Reports</button>
+        <button><i class="fas fa-bullseye"></i> Announcements</button>
+        <button><i class="fas fa-poll"></i> Surveys</button>
+        <button><i class="fas fa-star"></i> Employee Performance</button>
+        <button>
+          <i class="fas fa-chalkboard-teacher"></i> Training Programs
+        </button>
+        <button><i class="fas fa-cog"></i> Profile Settings</button>
+      </nav>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+      <!-- Header -->
+      <header class="header">
+        <div class="search-bar">
+          <input type="text" placeholder="Search anything anywhere" />
+        </div>
+        <div class="header-right">
+          <select class="language-selector">
+            <option value="en">ENG</option>
+            <option value="fr">FRA</option>
+            <option value="es">ESP</option>
+          </select>
+          <button class="icon-btn">🔔</button>
+          <button class="logout-btn">Log Out</button>
+        </div>
+      </header>
+
+      
+      <!-- Main Content -->
+    <main class="main-content">
+      <h1>Dashboard</h1>
+      <div class="row">
+        <!-- First Row: 3 Containers -->
+         <!-- First Container -->
+        <div class="card">
+          <h3>Attendance</h3>
+          <p>128 Employees</p>
+          <div class="progress-bar"><span style="width: 90%"></span></div>
+        </div>
+        <!-- Second Container -->
+        <div class="card celebrations-card">
+          <h3>
+            Celebrations <span class="count">(12)</span>
+            <span class="view-all">View All</span>
+          </h3>
+          <ul class="celebrations-list">
+            <li class="celebration-item">
+              <div class="user-info">
+                <img src="./assets/user_image.png" alt="User" class="user-image" />
+                <div>
+                  <p class="user-name">Zain Vetrovs</p>
+                  <p class="user-detail">23 June 2024 - Birthday!</p>
+                </div>
+              </div>
+              <img src="./assets/birthday_cake_img.png" alt="Cake" class="cake-image" />
+            </li>
+            <li class="celebration-item">
+              <div class="user-info">
+                <img src="./assets/user_image.png" alt="User" class="user-image" />
+                <div>
+                  <p class="user-name">Zain Vetrovs</p>
+                  <p class="user-detail">23 June 2024 - Anniversary!</p>
+                </div>
+              </div>
+              <img src="./assets/birthday_cake_img.png" alt="Cake" class="cake-image" />
+            </li>
+            <li class="celebration-item">
+              <div class="user-info">
+                <img src="./assets/user_image.png" alt="User" class="user-image" />
+                <div>
+                  <p class="user-name">Zain Vetrovs</p>
+                  <p class="user-detail">23 June 2024 - Birthday!</p>
+                </div>
+              </div>
+              <img src="./assets/birthday_cake_img.png" alt="Cake" class="cake-image" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- Third Container -->
+        
+        <div class="card new-hiring-card">
+          <h3>
+            New Hiring
+            <div class="date-selectors">
+              <select class="month-selector">
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+                <option>Jun</option>
+                <option>Jul</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+              </select>
+              <select class="year-selector">
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+              </select>
+            </div>
+          </h3>
+          <div class="center-content">
+            <img src="./assets/hiring_logo.png" alt="Team Logo" class="team-logo" />
+            <p class="count">12</p>
+            <p class="description">12 Employees are added to the team in December.</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <!-- Second Row: 2 Containers -->
+
+        <!-- Forth Container -->
+        <div class="card">
+          <h3>Employees Count by Departments <span class="view-all">View All</span></h3>
+          <div class="department-stats">
+            <div class="department">
+              <p>Administration</p>
+              <div class="progress-bar">
+                <span style="width: 80%"></span>
+              </div>
+              <p>200</p>
+            </div>
+            <div class="department">
+              <p>HR</p>
+              <div class="progress-bar">
+                <span style="width: 50%"></span>
+              </div>
+              <p>100</p>
+            </div>
+            <div class="department">
+              <p>Engineers</p>
+              <div class="progress-bar">
+                <span style="width: 50%"></span>
+              </div>
+              <p>100</p>
+            </div>
+            <div class="department">
+              <p>Manufacture</p>
+              <div class="progress-bar">
+                <span style="width: 10%"></span>
+              </div>
+              <p>20</p>
+            </div>
+            <div class="department">
+              <p>Counters</p>
+              <div class="progress-bar">
+                <span style="width: 10%"></span>
+              </div>
+              <p>20</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fifth Container -->
+        <div class="card_last">
+          <h3>Recent Requests</h3>
+          <p class="subtitle">Employee Name</p>
+          <ul class="requests-list">
+            <li class="request-item">
+              <div class="user-info">
+                <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
+                <div>
+                  <p class="user-name">Zain Vetrovs</p>
+                </div>
+              </div>
+              <div class="request-type">
+                Leave <span class="request-details">(28 March 2024)</span>
+              </div>
+            </li>
+            <li class="request-item">
+              <div class="user-info">
+                <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
+                <div>
+                  <p class="user-name">Jakob Culhane</p>
+                  
+                </div>
+              </div>
+              <div class="request-type">
+                Leave <span class="request-details">(28 March 2024)</span>
+              </div>
+            </li>
+            <li class="request-item">
+              <div class="user-info">
+                <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
+                <div>
+                  <p class="user-name">Ahmad Vaccaro</p>
+                  
+                </div>
+              </div>
+              <div class="request-type">
+                Leave <span class="request-details">(28 March 2024)</span>
+              </div>
+            </li>
+            <li class="request-item">
+              <div class="user-info">
+                <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
+                <div>
+                  <p class="user-name">Ruben Rihel Madsen</p>
+                  
+                </div>
+              </div>
+              <div class="request-type">
+                Advance Cash <span class="request-details">(Full Salary)</span>
+              </div>
+            </li>
+            <li class="request-item">
+              <div class="user-info">
+                <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
+                <div>
+                  <p class="user-name">Adison Ekstrom Bothman</p>
+                  
+                </div>
+              </div>
+              <div class="request-type">
+                Advance Cash <span class="request-details">(Full Salary)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        
+      </div>
+    </main>
+      </main>
+    </div>
+  </body>
+</html>
