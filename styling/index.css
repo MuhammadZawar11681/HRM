@@ -43,6 +43,7 @@ body {
 
 .nav-menu button:hover {
   background-color: #3b9ea2;
+  color: white;
 }
 
 /* Main Layout */
@@ -64,7 +65,8 @@ body {
 }
 
 .search-bar input {
-  width: 300px;
+  width: 430px;
+  height: 44px;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -116,7 +118,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Card styling */
@@ -174,7 +176,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
-  padding-bottom: 10px;
+  padding: 0px;
   border-bottom: 1px solid #f1f1f1;
 }
 
