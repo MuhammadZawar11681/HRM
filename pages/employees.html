@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=auto, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>HRM System</title>
+    <!-- Calling External Css -->
+    <link rel="stylesheet" href="../styling/index.css" />
+    <link rel="stylesheet" href="../styling/employees.css"/>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">HRM LOGO</div>
+      <nav class="nav-menu">
+        <button><i class="fas fa-tachometer-alt"></i> Dashboard</button>
+        <button><i class="fas fa-calendar-check"></i> Attendance</button>
+        <button><i class="fas fa-tasks"></i> Requests</button>
+        <button><i class="fas fa-users"></i> Employees</button>
+        <button><i class="fas fa-bullhorn"></i> Notices</button>
+        <button>
+          <i class="fas fa-exclamation-circle"></i> Warning Letters
+        </button>
+        <button><i class="fas fa-money-check-alt"></i> Payrolls</button>
+        <button><i class="fas fa-rss"></i> Feeds</button>
+        <button><i class="fas fa-sitemap"></i> Organization Structure</button>
+        <button><i class="fas fa-user-shield"></i> Users & Roles</button>
+        <button><i class="fas fa-chart-bar"></i> Reports</button>
+        <button><i class="fas fa-bullseye"></i> Announcements</button>
+        <button><i class="fas fa-poll"></i> Surveys</button>
+        <button><i class="fas fa-star"></i> Employee Performance</button>
+        <button>
+          <i class="fas fa-chalkboard-teacher"></i> Training Programs
+        </button>
+        <button><i class="fas fa-cog"></i> Profile Settings</button>
+      </nav>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+      <!-- Header -->
+      <header class="header">
+        <div class="search-bar">
+          <input type="text" placeholder="🔎 Search anything anywhere" />
+        </div>
+        <div class="header-right">
+          <select class="language-selector">
+            <option value="en">ENG</option>
+            <option value="fr">FRA</option>
+            <option value="es">ESP</option>
+          </select>
+          <button class="icon-btn">
+            <img
+              src="../assets/notification_icon.png"
+              alt="Notification Icon"
+              class="icon-image"
+            />
+          </button>
+          <button class="logout-btn">Log Out</button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+    <main class="main-content">
+      <!-- Employee container -->
+    <!-- Employee Page Content -->
+    <div class="employee-page">
+        <div class="employee-header">
+          <h2>Total (23)</h2>
+          <div class="filters">
+            <select>
+              <option>Department</option>
+              <option>All</option>
+            </select>
+            <select>
+              <option>Designation</option>
+              <option>All</option>
+            </select>
+            <select>
+              <option>Employment</option>
+              <option>All</option>
+            </select>
+          </div>
+          <button class="new-employee-btn">+ New Employee</button>
+        </div>
+
+        <div class="employee-table">
+          <table>
+            <thead>
+              <tr>
+                <th>S.NO</th>
+                <th>Id</th>
+                <th>Full Name</th>
+                <th>Phone Number</th>
+                <th>Designation</th>
+                <th>Department</th>
+                <th>Employment</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>EMP_01</td>
+                <td>Ahmad Jahangir</td>
+                <td>+201123736204</td>
+                <td>Supervisor</td>
+                <td>Data Science</td>
+                <td>Permanent</td>
+                <td>
+                  <button class="edit-btn">✏️</button>
+                  <button class="delete-btn">🗑️</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>EMP_02</td>
+                <td>Emery Bator</td>
+                <td>+201005521587</td>
+                <td>Supervisor</td>
+                <td>HR</td>
+                <td>Permanent</td>
+                <td>
+                  <button class="edit-btn">✏️</button>
+                  <button class="delete-btn">🗑️</button>
+                </td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+      </main>
+    </div>
+  </body>
+</html>
