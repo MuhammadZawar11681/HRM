@@ -111,6 +111,7 @@ body {
   padding: 20px;
   background-color: #eef2f5;
   overflow-y: auto;
+  min-height: 10vh;
 }
 
 /* Layout for Cards */
@@ -125,7 +126,7 @@ body {
 .card {
   background-color: #fff;
   padding: 20px;
-  width: 31%;
+  width: 50%;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -151,17 +152,85 @@ body {
 }
 
 /* Department stats */
-.department-stats {
-  margin-top: 10px;
-}
-
-.department {
+.attendance-list {
+  text-align: left;
   margin-bottom: 20px;
 }
 
-.department p {
+.attendance-list li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
   font-size: 14px;
-  color: #555;
+}
+
+.attendance-list li span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.present {
+  background: #3b9ea2;
+}
+.absent {
+  background: #057276;
+}
+.late {
+  background: #a4d6d8;
+}
+.leave {
+  background: #dedede;
+}
+
+.circle-chart-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.circle-chart {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(
+    #3b9ea2 0% 37%,
+    #057276 37% 74%,
+    #a4d6d8 74% 92%,
+    #dedede 92% 100%
+  );
+}
+
+.circle-chart-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.circle-chart-center p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.circle-chart-center p span {
+  font-size: 12px;
+  display: block;
+  font-weight: normal;
+  color: #777;
 }
 
 /* Celebrations list styling */
@@ -220,10 +289,8 @@ body {
   padding: 10px 20px 20px; /* Reduced top padding */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  height: 250px; /* Adjust based on your layout */
 }
 
 .new-hiring-card h3 {
