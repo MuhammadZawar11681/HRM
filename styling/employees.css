@@ -1,6 +1,16 @@
 /* Employee Page */
+.main-content-emp {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #eef2f5;
+  overflow-y: auto;
+  min-height: 10vh;
+  padding-top: 50px;
+}
 .employee-page {
   padding: 20px;
+  background-color: #ffffff;
+  margin-top: 10px;
 }
 
 .employee-header {
@@ -8,6 +18,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 18px;
+  color: #3b9ea2;
 }
 
 .employee-header h2 {
@@ -20,12 +32,16 @@
 }
 
 .new-employee-btn {
-  background-color: #00aaff;
+  background-color: #3b9ea2;
   color: white;
   border: none;
   padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.id_class {
+  color: #3b9ea2;
 }
 
 .employee-table table {
@@ -54,13 +70,11 @@
 }
 
 .edit-btn {
-  background-color: #4caf50;
   color: white;
   border-radius: 4px;
 }
 
 .delete-btn {
-  background-color: #f44336;
   color: white;
   border-radius: 4px;
 }
