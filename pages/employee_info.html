@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=auto, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <title>HRM System</title>
+    <!-- Calling External Css -->
+    <link rel="stylesheet" href="../styling/index.css" />
+    <link rel="stylesheet" href="../styling/employee_info.css" />
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">HRM LOGO</div>
+        <nav class="nav-menu">
+            <button><i class="fas fa-tachometer-alt"></i> Dashboard</button>
+            <button><i class="fas fa-calendar-check"></i> Attendance</button>
+            <button><i class="fas fa-tasks"></i> Requests</button>
+            <button><i class="fas fa-users"></i> Employees</button>
+            <button><i class="fas fa-bullhorn"></i> Notices</button>
+            <button>
+                <i class="fas fa-exclamation-circle"></i> Warning Letters
+            </button>
+            <button><i class="fas fa-money-check-alt"></i> Payrolls</button>
+            <button><i class="fas fa-rss"></i> Feeds</button>
+            <button><i class="fas fa-sitemap"></i> Organization Structure</button>
+            <button><i class="fas fa-user-shield"></i> Users & Roles</button>
+            <button><i class="fas fa-chart-bar"></i> Reports</button>
+            <button><i class="fas fa-bullseye"></i> Announcements</button>
+            <button><i class="fas fa-poll"></i> Surveys</button>
+            <button><i class="fas fa-star"></i> Employee Performance</button>
+            <button>
+                <i class="fas fa-chalkboard-teacher"></i> Training Programs
+            </button>
+            <button><i class="fas fa-cog"></i> Profile Settings</button>
+        </nav>
+    </div>
+ 
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Header -->
+        <header class="header">
+            <div class="search-bar">
+                <div class="search-container">
+                    <input
+                      type="text"
+                      placeholder="       Search anything anywhere"
+                      class="search-input"
+                    />
+                  </div>
+                  
+            </div>
+            <div class="header-right">
+                <select class="language-selector">
+                    <option value="en">ENG</option>
+                    <option value="fr">FRA</option>
+                    <option value="es">ESP</option>
+                </select>
+                <button class="icon-btn">
+                    <img src="../assets/notification_icon.png" alt="Notification Icon" class="icon-image" />
+                </button>
+                <button class="logout-btn">Log Out</button>
+            </div>
+        </header>
+
+        <!-- add employee Main Content -->
+        <main class="main-content-emp">
+            <!-- Navigation -->
+            <div class="employee-navigation">
+                <span class="home-icon">🏠</span><span style="color: #9E9EAC; font-size: 14px;">Employee / Employee
+                    Details</span>
+            </div>
+            
+
+            <!-- Add New Employee information -->
+            <div class="add-employee-form">
+                <div class="employee-details-page">
+                    <!-- Left Section -->
+                    <div class="left-section">
+                        <div class="employee-header">
+                            <h2><span style="color: #3B9EA2;">Muhammad Jahangir</span> <span
+                                    style="color: #808080; font-size: 18px;">(Manager)</span></h2>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="employee-card">
+                            <h3>Personal Information</h3>
+                            <img src="../assets/employee_img.png" alt="Employee Photo">
+                            <div class="personal-info">
+                                <h3>Personal Information</h3>
+                                <table style="color: #1A2524; font-size: 16px; ">
+                                    <tr>
+                                        <th>Employee ID</th>
+                                        <td>EMP_1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Contact Number</th>
+                                        <td>+92338938742</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email</th>
+                                        <td>abc@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DOB</th>
+                                        <td>12/05/2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Iqama Number</th>
+                                        <td>4342253</td>
+                                    </tr>
+                                    <tr>
+                                        <th>CNIC Number</th>
+                                        <td>17301-244189-2</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nationality</th>
+                                        <td>American</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="job-info">
+                                <h3>Job Information</h3>
+                                <table>
+                                    <tr>
+                                        <th>Designation</th>
+                                        <td>UI/UX Designer</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Department</th>
+                                        <td>Design</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Joining Date</th>
+                                        <td>12/05/2021</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Shift</th>
+                                        <td>Morning</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Time Off</th>
+                                        <td><span style="background-color: #F0F2F2; padding: 4px;">Sunday</span> <span
+                                                style="background-color: #F0F2F2; padding: 4px;"> Saturday</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Policies</th>
+                                        <td>Sick Leave, FLMA</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="identification-info">
+                                <h3>Identification Information</h3>
+                                <table>
+                                    <tr>
+                                        <th>Passport ID</th>
+                                        <td>4353DE634</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Driving License</th>
+                                        <td>4353DE634</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Bank Name</th>
+                                        <td>Habib Bank Limited</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="identification-info">
+                                <h3>Attachments</h3>
+                                <div class="attachments-container">
+                                    <!-- First Attachment -->
+                                    <span style="background-color: #F0F2F2; padding: 4px;"><img
+                                            src="../assets/doc-icon.png" alt="Attachment Icon 2" class="attachment-icon"
+                                            style="width: 14px; height: 18px;" /></span>
+
+                                    <!-- Second Attachment -->
+                                    <span style="background-color: #F0F2F2; padding: 4px;"><img
+                                            src="../assets/doc-icon.png" alt="Attachment Icon 2" class="attachment-icon"
+                                            style="width: 14px; height: 18px;" /></span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="right-section">
+                        <!-- Salary Information -->
+                        <div class="info-card">
+                            <h3 style="color: #3B9EA2;">Salary Information</h3>
+                            <table style="color: #1A2524; font-size: 16px; text-align: left;">
+                                <tr>
+                                    <th>Salary:</th>
+                                    <td>1,000,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Accommodation Allowance:</th>
+                                    <td>1,000,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Travel Allowance:</th>
+                                    <td>1,000,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Bonus:</th>
+                                    <td>1,000,000</td>
+                                </tr>
+                                <tfoot style="color: #3B9EA2; border-top: 1px solid #EEEEEEEE;">
+                                    <th>Total Salary</th>
+                                    <td>1,000,000</td>
+                                </tfoot>
+                            </table>
+
+                        </div>
+
+                        <!-- Leaves Information -->
+                        <div class="info-card">
+                            <h3>Leaves</h3>
+                            <div class="leaves-container">
+                                <div class="leave-box">
+                                    <h4>Sick Leaves</h4>
+                                    <div class="leave-details">
+                                        <img src="../assets/leave_icon.png" alt="Sick Icon" class="leave-icon" />
+                                        <span class="leave-hours">12</span>
+                                    </div>
+                                    <p>HOURS AVAILABLE</p>
+                                </div>
+                                <div class="leave-box">
+                                    <h4>Sick Leaves</h4>
+                                    <div class="leave-details">
+                                        <img src="../assets/leave_icon.png" alt="Sick Icon" class="leave-icon" />
+                                        <span class="leave-hours">12</span>
+                                    </div>
+                                    <p>HOURS AVAILABLE</p>
+                                </div>
+                                <div class="leave-box">
+                                    <h4>Bereavement</h4>
+                                    <div class="leave-details">
+                                        <img src="../assets/leave_icon.png" alt="Bereavement Icon" class="leave-icon" />
+                                        <span class="leave-hours">0</span>
+                                    </div>
+                                    <p>HOURS AVAILABLE</p>
+                                </div>
+                                <div class="leave-box">
+                                    <h4>FLMA</h4>
+                                    <div class="leave-details">
+                                        <img src="../assets/leave_icon.png" alt="FLMA Icon" class="leave-icon" />
+                                        <span class="leave-hours">12</span>
+                                    </div>
+                                    <p>HOURS AVAILABLE</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Other -->
+                        <div class="info-card">
+                            <h3>Others</h3>
+                            <div class="leaves-container">
+
+
+                                <div class="leave-box">
+                                    <span style="font-size: 16px; color: #1A2524;">Total Notices Recieved</span>
+                                    <div class="leave-details">
+
+                                        <span class="leave-hours">12</span>
+
+                                    </div>
+                                    <img src="../assets/arrow-left.png" alt="FLMA Icon"
+                                        style="width: 16px; height: 9px;" />
+                                </div>
+                                <div class="leave-box">
+                                    <span style="font-size: 16px; color: #1A2524;">Total Notices Recieved</span>
+                                    <div class="leave-details">
+
+                                        <span class="leave-hours">12</span>
+
+                                    </div>
+                                    <img src="../assets/arrow-left.png" alt="FLMA Icon"
+                                        style="width: 16px; height: 9px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        </main>
+    </div>
+</body>
+
+</html>
