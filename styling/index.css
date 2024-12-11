@@ -3,13 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
 }
 
 body {
-  font-family: cairo;
+  /* font-family: cairo; */
   display: flex;
   height: 100vh;
 }
+
 
 .search-container {
   position: relative;
@@ -143,7 +145,6 @@ body {
 .main-content::-webkit-scrollbar {
   display: none; /* Hides the scrollbar */
 }
-
 
 /* Layout for Cards */
 .row {
