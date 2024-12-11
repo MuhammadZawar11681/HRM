@@ -18,14 +18,14 @@
     <div class="sidebar">
         <div class="logo">HRM LOGO</div>
         <nav class="nav-menu">
-            <a href="/index.html" target="_blank">
+            <a href="/index.html" target="_parent">
                 <button><i class="fas fa-tachometer-alt"></i> Dashboard</button>
-              </a>
+            </a>
             <button><i class="fas fa-calendar-check"></i> Attendance</button>
             <button><i class="fas fa-tasks"></i> Requests</button>
-            <a href="./employees.html" target="_blank">
+            <a href="./employees.html" target="_parent">
                 <button style="background-color: #3b9ea2; color: white;"><i class="fas fa-users"></i> Employees</button>
-              </a>
+            </a>
             <button><i class="fas fa-bullhorn"></i> Notices</button>
             <button>
                 <i class="fas fa-exclamation-circle"></i> Warning Letters
@@ -47,18 +47,14 @@
 
     <!-- Main Layout -->
     <div class="main-layout">
-        <!-- Header --> 
+        <!-- Header -->
         <header class="header">
             <div class="search-bar">
                 <div class="search-bar">
                     <div class="search-container">
-                        <input
-                          type="text"
-                          placeholder="       Search anything anywhere"
-                          class="search-input"
-                        />
-                      </div>
-                      
+                        <input type="text" placeholder="       Search anything anywhere" class="search-input" />
+                    </div>
+
                 </div>
             </div>
             <div class="header-right">
@@ -76,14 +72,24 @@
 
         <!-- add employee Main Content -->
         <main class="main-content-emp">
-            
+
             <div class="employee-navigation">
                 <span class="home-icon">
-                  <img src="../assets/home.png" alt="Home" class="home-image" />
+                    <img src="../assets/home.png" alt="Home" class="home-image" />
                 </span>
                 <span style="color: #9E9EAC; font-size: 14px;">Employee / Add New Employee</span>
             </div>
-              
+            <a href="./employees.html" target="_parent" style="text-decoration: none;">
+                <div class="employee-navigation">
+                    <span class="home-icon">
+                        <img src="../assets/arrow-right.png" alt="Home" class="home-image"
+                            style="width: 24px; height: 12px;" />
+                    </span>
+                    <span style="color: #1A2524; font-size: 18px;">Add New Employee</span>
+                </div>
+            </a>
+
+
 
             <!-- Add New Employee Form -->
             <div class="add-employee-form">
@@ -385,13 +391,14 @@
                                         </div>
 
                                         <!-- Display Uploaded Images -->
-                                         
-                                        
+
+
                                     </div>
 
                                     <!-- Buttons -->
                                     <div style="display: flex; justify-content: flex-end; gap: 15px; margin-top: 20px;">
-                                        <button style="padding: 10px 20px; background-color: white; color: #3B9EA2; border: 1px solid #3B9EA2; border-radius: 5px; cursor: pointer;">Cancel</button>
+                                        <button
+                                            style="padding: 10px 20px; background-color: white; color: #3B9EA2; border: 1px solid #3B9EA2; border-radius: 5px; cursor: pointer;">Cancel</button>
                                         <button
                                             style="padding: 10px 20px; background-color: #3B9EA2; color: white; border: none; border-radius: 5px; cursor: pointer;">Add
                                             Employee</button>

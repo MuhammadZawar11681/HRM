@@ -476,6 +476,50 @@ body {
   margin-left: 8px;
 }
 
+.department-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Add space between departments */
+}
+
+.department {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Space between text and progress bars */
+}
+
+.progress-container {
+  position: relative;
+  width: 100%;
+}
+
+.count-number {
+  position: absolute;
+  top: -20px; /* Move number above the bar */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #3b9ea2;
+  border-radius: 5px;
+}
+
+
 /* Responsive styling */
 @media (max-width: 768px) {
   .card {
