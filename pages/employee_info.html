@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=auto, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <title>HRM System</title>
+    <!-- Calling External Css -->
+    <link rel="stylesheet" href="../styling/index.css" />
+    <link rel="stylesheet" href="../styling/employee_info.css" />
+
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">HRM LOGO</div>
+        <nav class="nav-menu">
+            <button><i class="fas fa-tachometer-alt"></i> Dashboard</button>
+            <button><i class="fas fa-calendar-check"></i> Attendance</button>
+            <button><i class="fas fa-tasks"></i> Requests</button>
+            <button><i class="fas fa-users"></i> Employees</button>
+            <button><i class="fas fa-bullhorn"></i> Notices</button>
+            <button>
+                <i class="fas fa-exclamation-circle"></i> Warning Letters
+            </button>
+            <button><i class="fas fa-money-check-alt"></i> Payrolls</button>
+            <button><i class="fas fa-rss"></i> Feeds</button>
+            <button><i class="fas fa-sitemap"></i> Organization Structure</button>
+            <button><i class="fas fa-user-shield"></i> Users & Roles</button>
+            <button><i class="fas fa-chart-bar"></i> Reports</button>
+            <button><i class="fas fa-bullseye"></i> Announcements</button>
+            <button><i class="fas fa-poll"></i> Surveys</button>
+            <button><i class="fas fa-star"></i> Employee Performance</button>
+            <button>
+                <i class="fas fa-chalkboard-teacher"></i> Training Programs
+            </button>
+            <button><i class="fas fa-cog"></i> Profile Settings</button>
+        </nav>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Header -->
+        <header class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="🔎 Search anything anywhere" />
+            </div>
+            <div class="header-right">
+                <select class="language-selector">
+                    <option value="en">ENG</option>
+                    <option value="fr">FRA</option>
+                    <option value="es">ESP</option>
+                </select>
+                <button class="icon-btn">
+                    <img src="../assets/notification_icon.png" alt="Notification Icon" class="icon-image" />
+                </button>
+                <button class="logout-btn">Log Out</button>
+            </div>
+        </header>
+
+        <!-- add employee Main Content -->
+        <main class="main-content-emp">
+            <!-- Navigation -->
+            <div class="employee-navigation">
+                <span class="home-icon" >🏠</span><span style="color: #9E9EAC; font-size: 14px;">Employee / Employee Details</span>
+            </div>
+
+            <!-- Add New Employee information -->
+            <div class="add-employee-form">
+                <div class="employee-details-page">
+                    <!-- Left Section -->
+                    <div class="left-section">
+                      <div class="employee-header">
+                        <h2>Muhammad Jahangir <span>(Manager)</span></h2>
+                        <span class="status active">Active</span>
+                      </div>
+                      <div class="employee-card">
+                        <img src="../assets/employee_img.png" alt="Employee Photo">
+                        <div class="personal-info">
+                          <h3>Personal Information</h3>
+                          <table>
+                            <tr>
+                              <th>Employee ID</th>
+                              <td>EMP_1</td>
+                            </tr>
+                            <tr>
+                              <th>Contact Number</th>
+                              <td>+92338938742</td>
+                            </tr>
+                            <tr>
+                              <th>Email</th>
+                              <td>abc@gmail.com</td>
+                            </tr>
+                            <tr>
+                              <th>DOB</th>
+                              <td>12/05/2021</td>
+                            </tr>
+                            <tr>
+                              <th>Iqama Number</th>
+                              <td>4342253</td>
+                            </tr>
+                            <tr>
+                              <th>CNIC Number</th>
+                              <td>17301-244189-2</td>
+                            </tr>
+                            <tr>
+                              <th>Nationality</th>
+                              <td>American</td>
+                            </tr>
+                          </table>
+                        </div>
+                
+                        <div class="job-info">
+                          <h3>Job Information</h3>
+                          <table>
+                            <tr>
+                              <th>Designation</th>
+                              <td>UI/UX Designer</td>
+                            </tr>
+                            <tr>
+                              <th>Department</th>
+                              <td>Design</td>
+                            </tr>
+                            <tr>
+                              <th>Joining Date</th>
+                              <td>12/05/2021</td>
+                            </tr>
+                            <tr>
+                              <th>Shift</th>
+                              <td>Morning</td>
+                            </tr>
+                            <tr>
+                              <th>Time Off</th>
+                              <td>Sunday, Saturday</td>
+                            </tr>
+                            <tr>
+                              <th>Policies</th>
+                              <td>Sick Leave, FLMA</td>
+                            </tr>
+                          </table>
+                        </div>
+                
+                        <div class="identification-info">
+                          <h3>Identification Information</h3>
+                          <table>
+                            <tr>
+                              <th>Passport ID</th>
+                              <td>4353DE634</td>
+                            </tr>
+                            <tr>
+                              <th>Driving License</th>
+                              <td>4353DE634</td>
+                            </tr>
+                            <tr>
+                              <th>Bank Name</th>
+                              <td>Habib Bank Limited</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div class="right-section">
+                      <!-- Salary Information -->
+                      <div class="info-card">
+                        <h3>Salary Information</h3>
+                        <ul>
+                          <li><span>Salary:</span> 1,000,000</li>
+                          <li><span>Accommodation Allowance:</span> 1,000,000</li>
+                          <li><span>Travel Allowance:</span> 1,000,000</li>
+                          <li><span>Bonus:</span> 1,000,000</li>
+                          <li><strong>Total Salary:</strong> 1,000,000</li>
+                        </ul>
+                      </div>
+                
+                      <!-- Leaves Information -->
+                      <div class="info-card">
+                        <h3>Leaves</h3>
+                        <ul>
+                          <li>Sick Leaves: 12 Hours</li>
+                          <li>FLMA: 12 Hours</li>
+                          <li>Bereavement: 0 Hours</li>
+                        </ul>
+                      </div>
+                
+                      <!-- Other -->
+                      <div class="info-card">
+                        <h3>Others</h3>
+                        <ul>
+                          <li>Total Notices Received: 12</li>
+                          <li>Warning Letters Received: 12</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </main>
+
+
+        </main>
+    </div>
+</body>
+
+</html>
