@@ -1,86 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=auto, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
 
-    <title>HRM System</title>
-    <!-- Calling External Css -->
-    <link rel="stylesheet" href="./styling/index.css" />
-  </head>
-  <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="logo">HRM LOGO</div>
-      <nav class="nav-menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=auto, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+  <title>HRM System</title>
+  <!-- Calling External Css -->
+  <link rel="stylesheet" href="./styling/index.css" />
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">HRM LOGO</div>
+    <nav class="nav-menu">
+      <a href="/index.html" target="_blank">
         <button><i class="fas fa-tachometer-alt"></i> Dashboard</button>
-        <button><i class="fas fa-calendar-check"></i> Attendance</button>
-        <button><i class="fas fa-tasks"></i> Requests</button>
+      </a>
+      <button><i class="fas fa-calendar-check"></i> Attendance</button>
+      <button><i class="fas fa-tasks"></i> Requests</button>
+      <a href="./pages/employees.html" target="_blank">
         <button><i class="fas fa-users"></i> Employees</button>
-        <button><i class="fas fa-bullhorn"></i> Notices</button>
-        <button>
-          <i class="fas fa-exclamation-circle"></i> Warning Letters
-        </button>
-        <button><i class="fas fa-money-check-alt"></i> Payrolls</button>
-        <button><i class="fas fa-rss"></i> Feeds</button>
-        <button><i class="fas fa-sitemap"></i> Organization Structure</button>
-        <button><i class="fas fa-user-shield"></i> Users & Roles</button>
-        <button><i class="fas fa-chart-bar"></i> Reports</button>
-        <button><i class="fas fa-bullseye"></i> Announcements</button>
-        <button><i class="fas fa-poll"></i> Surveys</button>
-        <button><i class="fas fa-star"></i> Employee Performance</button>
-        <button>
-          <i class="fas fa-chalkboard-teacher"></i> Training Programs
-        </button>
-        <button><i class="fas fa-cog"></i> Profile Settings</button>
-      </nav>
-    </div>
+      </a>
+      <button><i class="fas fa-bullhorn"></i> Notices</button>
+      <button>
+        <i class="fas fa-exclamation-circle"></i> Warning Letters
+      </button>
+      <button><i class="fas fa-money-check-alt"></i> Payrolls</button>
+      <button><i class="fas fa-rss"></i> Feeds</button>
+      <button><i class="fas fa-sitemap"></i> Organization Structure</button>
+      <button><i class="fas fa-user-shield"></i> Users & Roles</button>
+      <button><i class="fas fa-chart-bar"></i> Reports</button>
+      <button><i class="fas fa-bullseye"></i> Announcements</button>
+      <button><i class="fas fa-poll"></i> Surveys</button>
+      <button><i class="fas fa-star"></i> Employee Performance</button>
+      <button>
+        <i class="fas fa-chalkboard-teacher"></i> Training Programs
+      </button>
+      <button><i class="fas fa-cog"></i> Profile Settings</button>
+    </nav>
+  </div>
 
-    <!-- Main Layout -->
-    <div class="main-layout">
-      <!-- Header -->
-      <header class="header">
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Header -->
+    <header class="header">
+      <div class="search-bar">
         <div class="search-bar">
-          <div class="search-bar">
-            <div class="search-container">
-                <input
-                  type="text"
-                  placeholder="       Search anything anywhere"
-                  class="search-input"
-                />
-              </div>
-              
-        </div>
-        </div>
-        <div class="header-right">
-          <select class="language-selector">
-            <option value="en">ENG</option>
-            <option value="fr">FRA</option>
-            <option value="es">ESP</option>
-          </select>
-          <button class="icon-btn">
-            <img
-              src="./assets/notification_icon.png"
-              alt="Notification Icon"
-              class="icon-image"
-            />
-          </button>
-          <button class="logout-btn">Log Out</button>
-        </div>
-      </header>
+          <div class="search-container">
+            <input type="text" placeholder="       Search anything anywhere" class="search-input" />
+          </div>
 
-      
-      <!-- Main Content -->
+        </div>
+      </div>
+      <div class="header-right">
+        <select class="language-selector">
+          <option value="en">ENG</option>
+          <option value="fr">FRA</option>
+          <option value="es">ESP</option>
+        </select>
+        <button class="icon-btn">
+          <img src="./assets/notification_icon.png" alt="Notification Icon" class="icon-image" />
+        </button>
+        <button class="logout-btn">Log Out</button>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
     <main class="main-content">
       <h1>Dashboard</h1>
       <div class="row">
         <!-- First Row: 3 Containers -->
-         <!-- First Container -->
-         <div class="card">
+        <!-- First Container -->
+        <div class="card">
           <h3>Attendance</h3>
           <ul class="attendance-list">
             <li><span class="present"></span> Present: 120</li>
@@ -136,7 +131,7 @@
         </div>
 
         <!-- Third Container -->
-        
+
         <div class="card new-hiring-card">
           <h3>
             New Hiring
@@ -175,7 +170,7 @@
             <p class="description">12 Employees are added to the team in December.</p>
           </div>
         </div>
-        
+
       </div>
       <div class="row">
         <!-- Second Row: 2 Containers -->
@@ -221,7 +216,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Fifth Container -->
         <div class="card_last">
           <h3>Recent Requests</h3>
@@ -243,7 +238,7 @@
                 <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
                 <div>
                   <p class="user-name">Jakob Culhane</p>
-                  
+
                 </div>
               </div>
               <div class="request-type">
@@ -255,7 +250,7 @@
                 <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
                 <div>
                   <p class="user-name">Ahmad Vaccaro</p>
-                  
+
                 </div>
               </div>
               <div class="request-type">
@@ -267,7 +262,7 @@
                 <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
                 <div>
                   <p class="user-name">Ruben Rihel Madsen</p>
-                  
+
                 </div>
               </div>
               <div class="request-type">
@@ -279,7 +274,7 @@
                 <img src="./assets/user_image.png" alt="User Image" class="user-logo" />
                 <div>
                   <p class="user-name">Adison Ekstrom Bothman</p>
-                  
+
                 </div>
               </div>
               <div class="request-type">
@@ -288,11 +283,12 @@
             </li>
           </ul>
         </div>
-        
-        
+
+
       </div>
     </main>
-      </main>
-    </div>
-  </body>
+    </main>
+  </div>
+</body>
+
 </html>
